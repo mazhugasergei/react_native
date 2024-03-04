@@ -19,41 +19,38 @@ export default () => {
   const [searchValue, setSearchValue] = useState("")
 
   return (
-    <View>
-      {/* search cont */}
-      <View style={{ paddingVertical: 12, paddingHorizontal: 16 }}>
-        <View
+    <View style={{ paddingVertical: 12, paddingHorizontal: 16 }}>
+      <View
+        style={{
+          overflow: "hidden",
+          paddingVertical: 10,
+          paddingHorizontal: 16,
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          backgroundColor: "#EFF1F5",
+          borderRadius: 100,
+        }}
+      >
+        <SearchIcon style={{ opacity: search ? 0 : 1 }} />
+        <TextInput
+          placeholder="Search"
+          onFocus={() => setSearch(true)}
+          onBlur={() => !searchValue && setSearch(false)}
+          onChangeText={(text) => setSearchValue(text)}
           style={{
-            overflow: "hidden",
-            paddingVertical: 10,
-            paddingHorizontal: 16,
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            backgroundColor: "#EFF1F5",
-            borderRadius: 100,
+            position: "absolute",
+            top: 0,
+            bottom: 0,
+            left: 0,
+            right: 0,
+            textAlign: search ? "left" : "center",
+            fontFamily: "regular",
+            fontSize: 16,
+            paddingHorizontal: search ? 16 : 0,
           }}
-        >
-          <SearchIcon style={{ opacity: search ? 0 : 1 }} />
-          <TextInput
-            placeholder="Search"
-            onFocus={() => setSearch(true)}
-            onBlur={() => !searchValue && setSearch(false)}
-            onChangeText={(text) => setSearchValue(text)}
-            style={{
-              position: "absolute",
-              top: 0,
-              bottom: 0,
-              left: 0,
-              right: 0,
-              textAlign: search ? "left" : "center",
-              fontFamily: "regular",
-              fontSize: 16,
-              paddingHorizontal: search ? 16 : 0,
-            }}
-            placeholderTextColor="#A09CAB"
-          />
-        </View>
+          placeholderTextColor="#A09CAB"
+        />
       </View>
     </View>
   )
