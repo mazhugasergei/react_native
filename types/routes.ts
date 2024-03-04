@@ -1,8 +1,9 @@
 export type HomeStackParamsList = {
   HomeScreen: undefined
+  SearchScreen: undefined
   Houses: undefined
   Rooms: undefined
-  Farms: undefined
+  Apartments: undefined
   Saved: undefined
   Instant: undefined
   Profile: undefined

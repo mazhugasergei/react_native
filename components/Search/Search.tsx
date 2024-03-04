@@ -31,7 +31,7 @@ export default () => {
             flexDirection: "row",
             alignItems: "center",
             backgroundColor: "#EFF1F5",
-            borderRadius: 100,
+            borderRadius: 12,
           }}
         >
           <SearchIcon style={{ opacity: search ? 0 : 1 }} />
@@ -46,10 +46,9 @@ export default () => {
               bottom: 0,
               left: 0,
               right: 0,
-              textAlign: search ? "left" : "center",
               fontFamily: "regular",
               fontSize: 16,
-              paddingHorizontal: search ? 16 : 0,
+              paddingHorizontal: search ? 16 : 48,
             }}
             placeholderTextColor="#A09CAB"
           />

@@ -32,15 +32,15 @@ export default () => {
           <Text style={{ fontFamily: "semiBold", fontSize: 13, color: "#1C1C1C" }}>Rooms</Text>
         </Pressable>
 
-        {/* Farms */}
-        <Pressable onPress={() => navigation.navigate("Farms")} style={{ minWidth: 64, alignItems: "center" }}>
+        {/* Apartments */}
+        <Pressable onPress={() => navigation.navigate("Apartments")} style={{ minWidth: 64, alignItems: "center" }}>
           <Svg width="24" height="24" viewBox="0 0 24 24">
             <Path
               d="M20 8.35V19H18V11H6V19H4V8.35L12 5.15L20 8.35ZM22 21V7L12 3L2 7V21H8V13H16V21H22ZM11 19H9V21H11V19ZM13 16H11V18H13V16ZM15 19H13V21H15V19Z"
               fill="#1C1B1F"
             />
           </Svg>
-          <Text style={{ fontFamily: "semiBold", fontSize: 13, color: "#1C1C1C" }}>Farms</Text>
+          <Text style={{ fontFamily: "semiBold", fontSize: 13, color: "#1C1C1C" }}>Apartments</Text>
         </Pressable>
 
         {/* Saved */}

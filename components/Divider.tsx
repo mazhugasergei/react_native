@@ -1,9 +1,9 @@
 import { View } from "react-native"
 
-export default () => {
+export default ({ dashed }: { dashed?: boolean }) => {
   return (
     <View style={{ paddingVertical: 8, paddingHorizontal: 16 }}>
-      <View style={{ height: 1, backgroundColor: "#A09CAB" }} />
+      <View style={{ borderTopWidth: 1, borderTopColor: "#A09CAB", borderStyle: dashed ? "dashed" : "solid" }} />
     </View>
   )
 }

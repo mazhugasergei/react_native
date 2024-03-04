@@ -9,10 +9,10 @@ import Instant from "./Instant"
 import Profile from "./Profile"
 import Divider from "../components/Divider"
 import TitleMedium from "../components/TitleMedium"
-import Farms from "./Farms"
 import Categories from "../components/Home/Categories"
 import PostsHorizontal from "../components/Home/PostsHorizontal"
 import PostsVertical from "../components/Home/PostsVertical"
+import Apartments from "./Apartments"
 
 type HomeProps = NativeStackScreenProps<HomeStackParamsList>
 
@@ -38,7 +38,7 @@ export default () => {
       <HomeStack.Screen name="HomeScreen" component={HomeScreen} />
       <HomeStack.Screen name="Houses" component={Houses} />
       <HomeStack.Screen name="Rooms" component={Rooms} />
-      <HomeStack.Screen name="Farms" component={Farms} />
+      <HomeStack.Screen name="Apartments" component={Apartments} />
       <HomeStack.Screen name="Saved" component={Saved} />
       <HomeStack.Screen name="Instant" component={Instant} />
       <HomeStack.Screen name="Profile" component={Profile} />
